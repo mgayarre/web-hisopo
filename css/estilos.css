@@ -1,0 +1,470 @@
+/* Colores basados en el manual UNED */
+:root {
+  --verde-uned: #00533e;
+  --verde-uned-medium: #427562;
+  --verde-uned-light: #86a699;
+  --verde-uned-white: #cddad5;
+  --granate-uned: #90214a;
+  --gris-claro: #f4f4f4;
+  --gris-oscuro: #333333;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --fuente-base: 'Titillium Web', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente-base);
+  background-color: var(--blanco);
+  color: var(--gris-oscuro);
+  margin-left: 200px;
+}
+
+header {
+  background-color: var(--blanco);
+  color: var(--blanco);
+  padding: 0;
+}
+
+.contenedor-arriba {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-uned {
+  height: 60px;
+  width: 60px;
+  margin-left: 40px;
+}
+
+.nombre-grupo {
+  color: var(--verde-uned);
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+/* PRESENTACIÓN */
+
+/* Contenedor central */
+.contenedor-central {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Sección */
+.presentacion-seccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Espacio entre imagen y texto */
+  background-color: var(--blanco);
+  max-width: 60%;
+  height: 100%;
+}
+
+/* Contenedor de imagen de presentación */
+.imagen-container {
+  flex: 1;
+  /* La imagen ocupa la mitad del espacio */
+  max-width: 100%;
+  /* Ancho máximo de la imagen */
+}
+
+.imagen {
+  width: 100%;
+  /* Hace que la imagen ocupe todo el espacio disponible en el contenedor */
+  height: auto;
+}
+
+/* Contenedor de texto (Presentación + botón 'Leer más') */
+.contenedor-presentacion {
+  flex: 0 0 20%;
+  max-width: 200px;
+  text-align: center;
+  height: 100%;
+}
+
+.label-presentacion {
+  display: block;
+  font-size: 22px;
+  /*font-size: 8rem*/
+  /*font-weight: bold;*/
+  color: var(--gris-oscuro);
+  margin-bottom: 10px;
+}
+
+.boton-leer-mas {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: var(--verde-uned);
+  /* Color del botón */
+  color: var(--blanco);
+  text-decoration: none;
+  border-radius: 5px;
+  /* Bordes redondeados del botón */
+  font-size: 16px;
+}
+
+.boton-leer-mas:hover {
+  background-color: var(--verde-uned-medium);
+  /* Cambio de color cuando se pasa el ratón por encima */
+}
+
+/* FIN PRESENTACIÓN */
+
+
+/* SECCIONES */
+.secciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 40px auto;
+  max-width: 60%;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Contenedor de cada sección */
+.seccion {
+  flex: 1 1 250px;
+  /* Flexibilidad para que se ajusten de manera responsiva */
+  max-width: 50%;
+  text-align: center;
+  background-color: var(--blanco);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen dentro de cada sección */
+.seccion img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.seccion img:hover {
+  transform: scale(1.05);
+}
+
+/* Texto debajo de la imagen */
+.seccion a {
+  text-decoration: none;
+  color: var(--granate-uned);
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/* FIN SECCIONES */
+
+nav ul {
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: var(--verde-uned);
+}
+
+footer {
+  background-color: var(--gris-claro);
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--verde-uned);
+  text-decoration: none;
+}
+
+/* presentacion.html */
+.presentacion-completa {
+  text-align: justify;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.boton-volver {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.link-podcast {
+  color: var(--granate-uned);
+  text-decoration: none;
+}
+
+.link-podcast:hover {
+  text-decoration: underline;
+}
+
+/* proyectos.html */
+.contenedor-proyectos {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: justify;
+  padding: 5px;
+}
+
+.proyecto-principal,
+.proyecto-secundario {
+  margin-bottom: 25px;
+}
+
+.proyecto-principal strong,
+.proyecto-secundario strong {
+  display: block;
+  color: var(--verde-uned-medium);
+  margin-bottom: 5px;
+}
+
+.volver-inicio {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.volver-inicio a {
+  background-color: var(--verde-uned);
+  color: var(--blanco);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.volver-inicio a:hover {
+  background-color: var(--verde-uned-medium);
+}
+
+/* investigadores.html */
+.tabla-investigadores {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.tabla-investigadores th,
+.tabla-investigadores td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.tabla-investigadores th {
+  background-color: #f5f5f5;
+}
+
+.otros-investigadores {
+  margin-top: 2rem;
+}
+
+.otros-investigadores ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.contenedor-investigadores {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+/* publicaciones.html */
+.contenedor-publicaciones {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 5px;
+  text-align: justify;
+}
+
+.publicacion {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.publicacion strong {
+  color: var(--verde-uned);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.publicacion .autores {
+  font-style: italic;
+  color: var(--gris-oscuro);
+  margin-bottom: 5px;
+}
+
+.publicacion .enlace-publicacion {
+  color: var(--granate-uned);
+  text-decoration: none;
+}
+
+.publicacion .enlace-publicacion:hover {
+  text-decoration: underline;
+}
+
+h2.publicaciones-titulo {
+  text-align: center;
+  color: var(--verde-uned);
+  margin-bottom: 30px;
+}
+
+/* contacto.html */
+h1 {
+  text-align: center;
+  color: var(--verde-uned);
+  margin-bottom: 20px;
+}
+
+/* Formulario de contacto */
+.contenedor-contacto {
+  max-width: 900px;
+  margin: 40px auto;
+  /*padding: 10px;*/
+  text-align: justify;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 45px;
+}
+
+textarea {
+  height: 150px;
+}
+
+textarea:focus,
+input:focus {
+  border-color: var(--verde-uned);
+  outline: none;
+}
+
+button {
+  background-color: var(--verde-uned);
+  color: var(--blanco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--verde-uned-medium);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* SIDEBAR LATERAL */
+/* Menú lateral base */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  /* Ajusta el tamaño del menú lateral */
+  height: 100%;
+  background-color: var(--verde-uned);
+  padding-top: 50px;
+  /* Ajusta según el espacio de tu cabecera */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Contenedor de la lista del menú */
+.sidebar .menu-container {
+  display: block;
+  /* Asegura que el contenedor ocupe el ancho completo */
+  width: 100%;
+  /* Contenedor ocupa todo el ancho del menú */
+}
+
+/* Lista de elementos del menú */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Opciones del menú */
+.sidebar ul li {
+  display: block;
+  /* Esto asegura que cada opción se muestre en una nueva línea */
+  border-bottom: 1px solid var(--verde-uned-medium);
+}
+
+.sidebar ul li a {
+  display: block;
+  /* Hace que el enlace ocupe todo el ancho del li */
+  padding: 15px 20px;
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sidebar ul li a:hover {
+  background-color: var(--verde-uned-medium);
+}
